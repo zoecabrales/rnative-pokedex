@@ -1,0 +1,70 @@
+.HomePokeCard {
+    position: relative;
+    margin: 0;
+  }
+  
+  .card {
+      display: flex;
+      border-radius: 10px;
+      margin: 15px 0;
+      height: 115px;
+      padding: 20px;
+    }
+    
+    .card-data {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card-types {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .card-id {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      color: var(--text-number);
+      margin: 0;
+    }
+    
+    .card-name {
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      color: var(--text-white);
+      margin: 0;
+      z-index: 0;
+    }
+    
+    .card-img {
+      position: absolute;
+      right: 10px;
+      bottom: 25px;
+      height: 130px;
+      width: 130px;
+    }
+  
+    @media screen and (max-width: 320px) {
+      .card-img, .card-sixbythree {
+        display: none;
+      }
+    }
+    
+    .card-pokeball {
+      position: absolute;
+      right: -15px;
+      bottom: 0px;
+      height: 145px;
+      width: 145px;
+    }
+  
+    .card-sixbythree {
+      position: absolute;
+      top: 25px;
+      left: 90px;
+      width: 74px;
+      height: 32px;
+    }

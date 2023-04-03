@@ -1,0 +1,383 @@
+:root {
+    --type-bug: #8CB230;
+    --type-dark: #58575F;
+    --type-dragon: #0F6AC0;
+    --type-electric: #EED535;
+    --type-fairy: #ED6EC7;
+    --type-fighting: #D04164;
+    --type-fire: #FD7D24;
+    --type-flying: #748FC9;
+    --type-ghost: #556AAE;
+    --type-grass: #62B957;
+    --type-ground: #DD7748;
+    --type-ice: #61CEC0;
+    --type-normal: #9DA0AA;
+    --type-poison: #A552CC;
+    --type-psychic: #EA5D60;
+    --type-rock: #BAAB82;
+    --type-steel: #417D9A;
+    --type-water: #4A90DA;
+    
+    --background-type-bug: #8BD674;
+    --background-type-dark: #6F6E78;
+    --background-type-dragon: #7383B9;
+    --background-type-electric: #F2CB55;
+    --background-type-fairy: #EBA8C3;
+    --background-type-fighting: #EB4971;
+    --background-type-fire: #FFA756;
+    --background-type-flying: #83A2E3;
+    --background-type-ghost: #8571BE;
+    --background-type-grass: #8BBE8A;
+    --background-type-ground: #F78551;
+    --background-type-ice: #91D8DF;
+    --background-type-normal: #B5B9C4;
+    --background-type-poison: #9F6E97;
+    --background-type-psychic: #FF6568;
+    --background-type-rock: #D4C294;
+    --background-type-steel: #4C91B2;
+    --background-type-water: #58ABF6;
+  
+    --background-white: #FFFFFF;
+    --background-default-input: #F2F2F2;
+    --background-pressed-input: #E2E2E2;
+    --background-modal: rgba(23, 23, 27, 0.5);
+  
+    --gradient-vector: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    --gradient-pokeball: linear-gradient(180deg, #F5F5F5 50%, #FFFFFF 94.81%);
+    --gradient-vector-grey: linear-gradient(100.59deg, #E5E5E5 0%, rgba(245, 245, 245, 0) 100%);
+    --gradient-pokeball-grey: linear-gradient(135deg, #ECECEC 0%, #F5F5F5 100%);
+    --gradient-vector-white: linear-gradient(100.84deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    --gradient-pokeball-white: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    --gradient-pokemon-name: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 76.04%);
+    --gradient-pokemon-circle: linear-gradient(334.58deg, rgba(255, 255, 255, 0.35) 16.24%, rgba(255, 255, 255, 0) 44.6%);
+  
+    --text-white: #FFFFFF;
+    --text-black: #17171B;
+    --text-grey: #747476;
+    --text-number: rgba(23, 23, 27, 0.6);
+  
+    --height-short: #FFC5E6;
+    --height-medium: #AEBFD7;
+    --height-tall: #AAACB8;
+  
+    --weight-light: #99CD7C;
+    --weight-normal: #57B2DC;
+    --weight-heavy: #5A92A5;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  html, body {
+    max-width: 100%;
+    min-width: 300px;
+    overflow-x: hidden;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .outer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .inner {
+    max-width: 550px;
+    width: 100%;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0px 14px 80px rgb(34 35 58 / 20%);
+    padding: 40px;
+    border-radius: 15px;
+    transition: all 0.3s;
+  }
+  
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+  
+    position: absolute;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+  
+    border-radius: 10px;
+  }
+  
+  .button-primary {
+    background: var(--type-psychic);
+    box-shadow: 0px 10px 20px rgba(234, 93, 96, 0.3);
+  
+  }
+  
+  .button-secondary {
+    background: var(--background-default-input);
+  }
+  
+  button a {
+    height: 19px;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  button a.button-primary-a {
+    color: var(--text-white);
+  }
+  
+  button a.button-seondary-a {
+    color: var(--text-grey);
+  }
+  
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  .app {
+    color:#000000;
+  }
+  
+  
+  .Home {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .HomeNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin: 0px;
+    height: 25px;
+  }
+  
+  .nav--generation {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+  }
+  
+  .nav--sort {
+    height: 17.33px;
+    width: 20px;
+    margin-right: 20px;
+  }
+  
+  .nav--filter {
+    height: 18px;
+    width: 20px;
+  }
+  
+  
+  .title {
+    margin: 0;
+  }
+  
+  .title--text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--text-black);
+    margin: 0;
+    margin-bottom: 9px;
+  }
+  
+  .title--description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--text-grey);
+    margin: 0;
+  }
+  
+  .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 25px;
+    gap: 10px;
+  }
+  
+  .search--icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    top: 2px;
+  }
+  
+  
+  .search--input {
+    height: 38px;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: none;
+    padding: 0; 
+    margin: 0;
+    
+    background-color: var(--background-default-input);
+    color: var(--text-grey);
+    border-radius: 10px;
+  
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    outline: none;
+    border-style: none; 
+  }
+  
+  /* .search--input:focus {
+    background-color: var(--background-pressed-input);
+    color: var(--text-black);
+    outline: none;
+  } */
+  
+  .monlist {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pokemonImages{
+    display:flex;
+  }
+  .pokemonImage {
+    display:block;
+    object-fit: contain; 
+    max-width: 100%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px auto;
+  }
+  
+  
+  .pokemonName {
+    font-size:30px;
+    font-weight: bolder;
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px;
+  }
+  
+  .pokemonTypeBox {
+    display:block;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px;
+  }
+  
+  .pokemonTypeBox h2 {
+    font-size:1.6em;
+    display:block;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px;
+  }
+  
+  .pokemonTypes {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .pokemonType {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight: 500;
+    width: 65px;
+    height: 30px;
+    border-radius: 5px;
+    padding: auto;
+    margin: 5px;
+    color:#FFF;
+  }
+  
+  .statsAndAbilities {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px;
+    height:max-content;
+  }
+  
+  .statsTable table {
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  .statsTable table th {
+    font-size:1.6em;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px;
+  }
+  
+  .statsTable td {
+    padding: 2px 10px;
+  }
+  
+  .statNameColumn {
+    justify-content:left;
+    align-items:left;
+  }
+  
+  .abilities {
+    display:block;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  .isHidden {
+    font-size: small;
+    font-style: italic;
+  }

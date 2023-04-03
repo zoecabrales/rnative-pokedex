@@ -1,0 +1,32 @@
+.typebadge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+
+    width: max-content;
+    height: 25px;
+    border-radius: 3px;
+    margin: 5px 2.5px;
+    z-index: 0;
+  }
+  
+  .typebadge-icon {
+    width: 15px;
+    height: 15px;
+
+    /* Cant seem to use fill, color or background-color. 
+    Use https://codepen.io/sosuke/pen/Pjoqqp to match colors for filter.
+    This is colour matched to --text-white. */
+    filter: invert(99%) sepia(0%) saturate(2%) hue-rotate(224deg) brightness(101%) contrast(100%);
+  }
+  
+  .typebadge--name {
+    color: var(--text-white);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+  }
